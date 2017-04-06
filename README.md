@@ -1,0 +1,1 @@
+This repo is used to store the code for a simpler crawler I wrote on Dec 2016. The crawler will get back all the info related to the room offered by ziroom. Hopefully I may do some analytic on all the data I get in the future.
