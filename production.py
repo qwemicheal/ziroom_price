@@ -29,7 +29,7 @@ start = 'http://www.ziroom.com/z/nl/z2.html?qwd=&p=%s'
 mainTable = 'ziruMain'
 db_env = 'test'
 db = 'ziroom'
-prefix = '/home/why/ziroom_price/'
+prefix = '/root/project/ziroom/ziroom_price/'
 dir = prefix+date
 subdir = dir + '/rooms'
 if not os.path.exists(dir):
@@ -78,7 +78,7 @@ else:
 
 for i in mainRange:
     try:
-        page = requests.get(start%str(i),timeout = 10)
+        page = requests.get(start%str(i),timeout = 10,headers=headers)
     except Exception as e:
         logging.info(e)
         continue
